@@ -7,16 +7,14 @@ kramdown:
 
 # 作者信息
 author: 
-  name: 闫肃
-  email: suyan0830@gmail.com
-  link: http://yansu.org
-  weibo: http://weibo.com/yansu0711
-  github: http://github.com/suyan
+  name: 路，漫漫走
+  email: 1104243703@qq.com
+  weibo: http://weibo.com/suxishui5201314
+  github: http://github.com/Lance201314
 
 # 站点信息
-title: 闫肃的博客 
-description: 闫肃的博客
-url: http://yansu.org
+title: 路，漫漫走的博客 
+description: 路，漫漫走的博客
 rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
@@ -26,8 +24,7 @@ favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
 # google analytics 设置
 ga:
   id: UA-54767140-1
-  url: yansu.org
 
 # disqus 设置
 disqus:
-  shortname: suyan-zh
+  shortname: lance-zh
