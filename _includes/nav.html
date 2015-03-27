@@ -2,6 +2,11 @@
   <nav id="tags">
     <a href="/index.html" id="avatar" style="background-image:url({{ site.avatar }})"></a>
 
+    <h3 id="authorName">{{site.author.name}}</h3>
+    <div id="introduction">
+      {{site.introduction}}
+    </div>
+
     <ul id="tags__ul">
       <li id="pl__all" class="tags__li tags-btn active">所有文章</li>
       {% for category in site.categories %} 
