@@ -4,8 +4,9 @@ title: objective-c 面向切面编程（AOP）
 category: iOS
 keywords: AOP objective-c 面向切面编程（AOP）
 description: 面向切面编程（AOP）
-date: 2015-03-31 00:56:01
 ---
+
+时间：2015-03-31 00:57:03
 
 ## 浅谈objective-c 面向切面变成（注释：学习他人代码）
 
@@ -19,7 +20,7 @@ date: 2015-03-31 00:56:01
 
 ## 具体方式～
 2、替换运行时方法的方法(注：要引入运行时库文件#import <objc/objc-runtime.h>)
-    {% highlight objective-c %}
+    {% highlight objective-c linenos %}
         // 运行时，交换执行的方法
         void swizzleMethod(Class class, SEL originalSelector, SEL swizzledSelector)
         {
@@ -42,7 +43,7 @@ date: 2015-03-31 00:56:01
     {% endhighlight %}
 
 3、编写要替换的方法
-{% highlight objective-c %}
+{% highlight objective-c linenos %}
 // 替换的方法，一般用于log日志等功能
 - (void)swizzled_viewDidAppear:(BOOL)animated
 {
@@ -56,7 +57,7 @@ date: 2015-03-31 00:56:01
 {% endhighlight %}
 
 4、执行方法
-{% highlight objective-c %}
+{% highlight objective-c linenos %}
 + (void)load
 {
     swizzleMethod([self class], @selector(viewDidLoad), @selector(swizzled_viewDidAppear:));
@@ -66,10 +67,11 @@ date: 2015-03-31 00:56:01
 最后，在需要的地方，引入类别的头文件即可实现，一次导入，多出执行，真正的实现面向切面变成，至于为什么，只需要引入头文件就可以实现函数的替换，还在探索中～
 
 ##  方案二（这种也有硬编码的嫌疑～）
-    主要是通过代理协议实现的～,实现原理还在琢磨中～，代码先记录学习～
+主要是通过代理协议实现的～,实现原理还在琢磨中～，代码先记录学习～
+
 1. 创建一个协议
 
-{% highlight objective-c %}
+{% highlight objective-c linenos %}
 #import <Foundation/Foundation.h>
 
 @protocol DPDynamicProtocol <NSObject>
@@ -83,7 +85,7 @@ date: 2015-03-31 00:56:01
 
 2.创建实现协议的NSProxy类，在此类中拦截，捕捉异常、日志等事件
 
-{% highlight objective-c %}
+{% highlight objective-c linenos %}
 #import <Foundation/Foundation.h>
 #import "DPDynamicProtocol.h"
 
@@ -145,7 +147,7 @@ date: 2015-03-31 00:56:01
 {% endhighlight %}
 
 3. 对应需要功能的类
-{% highlight objective-c %}
+{% highlight objective-c linenos %}
 
 #import <Foundation/Foundation.h>
 #import "DPDynamicProtocol.h"
