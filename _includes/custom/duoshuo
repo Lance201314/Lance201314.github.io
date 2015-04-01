@@ -1,0 +1,5 @@
+<!-- comment begin  -->
+
+<div id="comments">
+	<div class=""ds-thred" {% if page.id %} data-thread-key="{{page.id}}"{%endif %} data-title="{% if page.title %}{{page.title}} - {% endif %} {{site.title}}"></div>
+</div>

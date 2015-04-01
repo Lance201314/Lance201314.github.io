@@ -26,5 +26,7 @@ ga:
   id: UA-54767140-1
 
 # disqus 设置
-disqus:
-  shortname: lance-zh
+comments:
+  provider: doushou
+  duoshuo:
+    short_name: Love_you_my_baby

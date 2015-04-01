@@ -576,11 +576,11 @@ iframe {
     #post__share > .fontello:hover, #post__share > .post__toc-li:hover:before {
       box-shadow: 0 0 0 2px rgba(125, 139, 153, 0.15); }
 
-#icon-twitter {
+#icon-qqzone {
   margin-left: -90px; }
-  #icon-twitter:hover {
+  #icon-qqzone:hover {
     color: #4099ff; }
-  #icon-twitter:before {
+  #icon-qqzone:before {
     content: "\e805"; }
 
 #icon-cc {
