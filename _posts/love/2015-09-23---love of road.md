@@ -1,0 +1,16 @@
+---
+layout: post
+title: 在路上爱
+category: 恋爱
+keywords: Love
+description:
+---
+
+## 不是结束，而是开始
+    生活就是这样开始的呢～～
+
+
+## 博客平台
+
+这个博客是通过 [Jekyll](http://jekyllrb.com/)生成，部署在 [GitHub](https://pages/github.com), 主题基于 [3-Jekyll](https://github.com/P233/3-Jekyll)拷贝生产呢个，非常感谢 [sushan](https://github.com/sushan)。
+
